@@ -41,6 +41,7 @@ public class CustomPlayerSettings
     }
 }
 ```
+Then, run it from the Editor from the menu bar dropdown: Tools -> Set Custom IL2CPP Settings
 
 Build Profiles (Platforms -> Android):
 - Build (Top Right)
