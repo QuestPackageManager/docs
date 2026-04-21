@@ -6,10 +6,8 @@ This repository collects processes, notes, and tools for working with IL2CPP-bas
 
 - [Overview](#overview)
 - [Repository Structure](#repository-structure)
-- [Core Documents](#core-documents)
 - [Ghidra Dump](#ghidra-dump)
 - [Contributing](#contributing)
-- [Resources](#resources)
 
 ## Overview
 
