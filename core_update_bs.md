@@ -40,6 +40,10 @@ TODO:
 ## Publishing Cordl
 TODO:
 
+Cordl versions are defined by the game's modding requirements. For Beat Saber modding, we use `{MAJOR:02}{MINOR:02}-{MAJOR-CORDL}-{MINOR-CORDL}` versioning scheme. 
+
+As an example, we assume we make headers for 1.42.1, the version for cordl would be `4201.0.0`. If cordl headers were updated for the same game version, this would be `4201.1.0` for example.
+
 ## Updating the mods
 
 The following mods must be updated, and they require compilation in their dependency order. 
