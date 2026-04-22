@@ -23,9 +23,10 @@ Beat Saber's Cordl headers are stored at https://github.com/QuestPackageManager/
 ./generate.ps1 <apk>
 ```
  
-However, this process can be also be done manually. Essentially, you'll need to extract two files from the IL2CPP game. In the case of an APK, this is what you'll use:
-- `<apk>/lib/arm64-v8a/libil2cpp.so`
-- `<apk>/assets/bin/Data/Managed/Metadata/global-metadata.dat`
+However, this process can be also be done manually. Essentially, you'll need to extract two files from the IL2CPP game.
+- Android APK:
+    - `<apk>/lib/arm64-v8a/libil2cpp.so`
+    - `<apk>/assets/bin/Data/Managed/Metadata/global-metadata.dat`
 
 Most archive extractors can read APK files, though `apktool` is what the script uses.
 
@@ -43,6 +44,9 @@ TODO:
 Cordl versions are defined by the game's modding requirements. For Beat Saber modding, we use `{MAJOR:02}{MINOR:02}-{MAJOR-CORDL}-{MINOR-CORDL}` versioning scheme. 
 
 As an example, we assume we make headers for 1.42.1, the version for cordl would be `4201.0.0`. If cordl headers were updated for the same game version, this would be `4201.1.0` for example.
+
+## Unstripped LibUnity
+[./unstripped_libunity](Guide) for retrieving and uploading unstripped libunity.so. You may skip to the PR section if the Unity version is already previously supported.
 
 ## Updating the mods
 

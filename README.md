@@ -2,11 +2,10 @@
 
 This repository collects processes, notes, and tools for working with IL2CPP-based Quest libraries.
 
-## Indice (Index)
+## Index
 
 - [Overview](#overview)
 - [Repository Structure](#repository-structure)
-- [Ghidra Dump](#ghidra-dump)
 - [Contributing](#contributing)
 
 ## Overview
@@ -19,6 +18,8 @@ These notes are intended to document workflows for extracting, updating, and mod
 - core_update_bs.md — Process documenting updating core mods for Beat Saber Quest.
 - core_update_il2cpp.md — Process documenting supporting new IL2CPP targets/versions. 
 - GhidraDump.md — Ghidra export/dump notes and navigation tips.
+- il2cpp.md — Notes on IL2CPP internals, symbols, and tools.
+- unstripped_libunity.md — Notes on analysing unstripped libunity binaries.
 
 
 ## Contributing
