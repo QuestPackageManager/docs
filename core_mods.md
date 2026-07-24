@@ -46,4 +46,3 @@ Requires:
 - MetaCore
 
 ### SongDownloader
-### Playlist Manager
