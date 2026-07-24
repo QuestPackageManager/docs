@@ -8,14 +8,23 @@ This document outlines the process workflow to update core mods for Beat Saber (
 - [cordl](https://github.com/QuestPackageManager/cordl)
 - `apktool` (optional)
 
-## Is a Unity update required?
+## Is a LibIl2Cpp update required?
 Critera:
 - IL2CPP version was changed (TODO: Provide tool to find version)
 - IL2CPP runtime metadata was modified (TODO:)
 - IL2CPP xrefs no longer work for reasons unrelated
 - TODO:
 
-If the criteria is met, follow the steps in [./core_update_unity.md] before continuing here.
+If the criteria is met, follow the steps in [./core_update_il2cpp.md] before continuing here.
+
+## Is a Unstripped LibUnity update required? (optional)
+Unstripped libunity offers various functions that are usually removed in production builds of a game when it's unused e.g PhysicsModule. We can replace the file with our own built debug unstripped libunity.so that revives the functionality.
+
+Criteria:
+- Unity engine was updated
+- A security exploit was patched https://unity.com/ru/security/sept-2025-01/remediation
+
+If the criteria is met, follow the steps in [./unstripped_libunity.md] before continuing here.
 
 ## Generating Cordl
 Beat Saber's Cordl headers are stored at https://github.com/QuestPackageManager/bs-cordl/. Luckily, this repository provides [a script](https://github.com/QuestPackageManager/bs-cordl/blob/main/generate.ps1) to generate headers from an APK:
@@ -50,11 +59,7 @@ As an example, we assume we make headers for 1.42.1, the version for cordl would
 
 ## Updating the mods
 
-The following mods must be updated, and they require compilation in their dependency order. 
-
-- SongCore
-- MetaCore
-- ...
+The mods listed in [./core_mods.md] must be updated, and they require compilation in their dependency order. 
 
 Generally, you can update the mods by following this set of commands:
 ```

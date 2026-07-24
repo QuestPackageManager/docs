@@ -36,7 +36,14 @@ This requires updating when a IL2CPP runtime update occurs.
 
 ## Beat Saber Core mods
 
+### Lapiz
+A library/utility mod that allows mods to use the game's internal dependency injection library Zenject within their mods. Offers various features such as DI injections alongside affinity patches and events for the game's lifecycle.
+
+### MetaCore
 ### SongCore
+Requires:
+- Lapiz
+- MetaCore
+
 ### SongDownloader
 ### Playlist Manager
-### MetaCore
